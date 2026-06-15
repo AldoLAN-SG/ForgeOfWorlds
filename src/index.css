@@ -11,3 +11,11 @@ body {
   font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
     sans-serif;
 }
+
+
+@media (max-width: 768px) {
+  .react-flow__node {
+    transform: scale(1.08);
+    transform-origin: center;
+  }
+}

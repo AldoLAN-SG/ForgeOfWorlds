@@ -109,7 +109,7 @@ export function Toolbar() {
               key={def.kind}
               type="button"
               onClick={() => handleAdd(def)}
-              className="flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
+              className="flex items-center gap-1.5 rounded-lg px-2 py-2 text-xs md:px-3 md:py-1.5 md:text-sm font-medium text-white transition-opacity hover:opacity-90"
               style={{ backgroundColor: def.accent }}
             >
               <Icon size={15} />
@@ -125,7 +125,7 @@ export function Toolbar() {
           type="button"
           onClick={handleExport}
           title="Exportar universo como JSON"
-          className="flex items-center gap-1.5 rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100"
+          className="flex items-center gap-1.5 rounded-lg border border-slate-300 px-2 py-2 text-xs md:px-3 md:py-1.5 md:text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100"
         >
           <Download size={14} />
           Exportar
@@ -136,7 +136,7 @@ export function Toolbar() {
           type="button"
           onClick={() => fileInputRef.current?.click()}
           title="Importar universo desde JSON"
-          className="flex items-center gap-1.5 rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100"
+          className="flex items-center gap-1.5 rounded-lg border border-slate-300 px-2 py-2 text-xs md:px-3 md:py-1.5 md:text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100"
         >
           <Upload size={14} />
           Importar
@@ -156,7 +156,7 @@ export function Toolbar() {
           type="button"
           onClick={handleDelete}
           disabled={selectedCount === 0}
-          className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-40"
+          className="rounded-lg border border-slate-300 px-2 py-2 text-xs md:px-3 md:py-1.5 md:text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-40"
         >
           Eliminar{selectedCount > 0 ? ` (${selectedCount})` : ''}
         </button>
